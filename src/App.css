@@ -182,3 +182,110 @@
     border-right-color: var(--border);
   }
 }
+/* =========================
+   Mobile Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #center {
+    width: 100%;
+    padding: 24px 16px;
+    gap: 16px;
+  }
+
+  #next-steps {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #next-steps > div {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
+  #docs {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  #next-steps ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #next-steps ul li {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  #next-steps ul a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .hero .base {
+    width: 140px;
+    max-width: 70vw;
+  }
+
+  .hero .framework {
+    top: 28px;
+    max-width: 60vw;
+    transform: perspective(2000px)
+      rotateZ(300deg)
+      rotateX(44deg)
+      rotateY(39deg)
+      scale(1.1);
+  }
+
+  .hero .vite {
+    top: 88px;
+    max-width: 50vw;
+  }
+
+  .counter {
+    font-size: 14px;
+    padding: 5px 8px;
+    margin-bottom: 16px;
+  }
+
+  #spacer {
+    height: 32px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  #center {
+    padding: 20px 12px;
+  }
+
+  #next-steps > div {
+    padding: 20px 12px;
+  }
+
+  .counter {
+    font-size: 13px;
+  }
+
+  .hero .base {
+    width: 120px;
+  }
+}
